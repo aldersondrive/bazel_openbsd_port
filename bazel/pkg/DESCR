@@ -1,0 +1,13 @@
+Bazel is a declarative, multilanguage build tool. It is the open-source
+version of the build tool that Google uses internally.
+
+An example configuration file has been installed as
+/usr/local/share/examples/bazel/bazel.bazelrc. You may wish to copy this file
+to /etc/bazel.bazelrc.
+
+Known limitations:
+
+- Running Bazel to build/test Java code requires a
+  --host_javabase=@local_jdk//:jdk flag.
+
+- Sandboxing is unsupported.

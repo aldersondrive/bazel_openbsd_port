@@ -1,0 +1,4 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/bazel
+share/examples/bazel/
+share/examples/bazel/bazel.bazelrc
