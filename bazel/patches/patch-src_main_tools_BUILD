@@ -1,0 +1,14 @@
+Index: src/main/tools/BUILD
+--- src/main/tools/BUILD.orig
++++ src/main/tools/BUILD
+@@ -39,8 +39,9 @@ cc_binary(
+         ],
+     }),
+     linkopts = select({
+-        "//src/conditions:windows": [],
++        "//src/conditions:openbsd": [],
+         "//src/conditions:darwin": ["-lm"],
++        "//src/conditions:windows": [],
+         "//conditions:default": [
+             "-lm",
+             "-lrt",

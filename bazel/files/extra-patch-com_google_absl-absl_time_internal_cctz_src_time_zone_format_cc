@@ -1,0 +1,11 @@
+--- absl/time/internal/cctz/src/time_zone_format.cc.orig	Sat Oct  1 17:10:47 2022
++++ absl/time/internal/cctz/src/time_zone_format.cc	Sat Oct  1 17:11:01 2022
+@@ -19,7 +19,7 @@
+ #endif
+ 
+ #if defined(HAS_STRPTIME) && HAS_STRPTIME
+-#if !defined(_XOPEN_SOURCE)
++#if !defined(_XOPEN_SOURCE) && !defined(__OpenBSD__)
+ #define _XOPEN_SOURCE  // Definedness suffices for strptime.
+ #endif
+ #endif

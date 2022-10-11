@@ -1,0 +1,7 @@
+build --extra_toolchains=@local_jdk//:all
+test --extra_toolchains=@local_jdk//:all
+run --extra_toolchains=@local_jdk//:all
+
+build --tool_java_runtime_version=11
+test --tool_java_runtime_version=11
+run --tool_java_runtime_version=11

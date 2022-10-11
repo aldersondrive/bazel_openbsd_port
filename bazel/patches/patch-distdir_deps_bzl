@@ -1,0 +1,24 @@
+Index: distdir_deps.bzl
+--- distdir_deps.bzl.orig
++++ distdir_deps.bzl
+@@ -123,6 +123,8 @@ DIST_DEPS = {
+         "patches": [
+             "//third_party/grpc:grpc_1.47.0.patch",
+             "//third_party/grpc:grpc_1.47.0.win_arm64.patch",
++            "//third_party:extra-patch-com_github_grpc_grpc-src_core_lib_iomgr_sockaddr_utils_posix_cc",
++            "//third_party:extra-patch-com_github_grpc_grpc-third_party_cares_cares_BUILD",
+         ],
+         "used_in": [
+             "additional_distfiles",
+@@ -228,6 +230,11 @@ DIST_DEPS = {
+     "com_google_absl": {
+         "archive": "20211102.0.tar.gz",
+         "sha256": "dcf71b9cba8dc0ca9940c4b316a0c796be8fab42b070bb6b7cab62b48f0e66c4",
++        "patches": [
++            "//third_party:extra-patch-com_google_absl-absl_base_config_h",
++            "//third_party:extra-patch-com_google_absl-absl_debugging_internal_elf_mem_image_cc",
++            "//third_party:extra-patch-com_google_absl-absl_time_internal_cctz_src_time_zone_format_cc",
++        ],
+         "urls": [
+             "https://mirror.bazel.build/github.com/abseil/abseil-cpp/archive/refs/tags/20211102.0.tar.gz",
+             "https://github.com/abseil/abseil-cpp/archive/refs/tags/20211102.0.tar.gz",
