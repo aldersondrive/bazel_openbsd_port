@@ -1,10 +1,9 @@
-VERSION =		6.0.0-pre.20220922.1
+VERSION =		6.0.0
 
 COMMENT =		polyglot build tool
 HOMEPAGE =		https://bazel.build/
 
 DISTNAME =		bazel-${VERSION}
-PKGNAME =		bazel-6.0.0pre.20220922.1
 
 CATEGORIES =		devel
 
